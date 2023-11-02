@@ -384,7 +384,7 @@
 			"response": []
 		},
 		{
-			"name": "Get All Pets",
+			"name": "Get All Customer",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -502,7 +502,47 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Get All Pets",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/pet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"pet",
+						"owner",
+						"1"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}
-			}
+}
